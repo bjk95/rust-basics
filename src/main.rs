@@ -15,7 +15,7 @@ fn main() {
     println!("His is {}", john.description);
 
 //    let path: String = "taxables.csv".to_string();
-    csvs::basic_csv_reader(path);
+    csvs::example();
 }
 
 fn create_person(n: String, a: i32, d: String) -> Person {

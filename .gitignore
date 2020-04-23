@@ -1,5 +1,5 @@
 .idea/
-Cargo.toml
+Cargo.lock
 rust-basics.iml
 
 target/
