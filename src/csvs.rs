@@ -36,8 +36,13 @@ pub fn basic_csv_reader() -> Result<(), Box<dyn Error>> {
     let mut reader: Reader<Stdin> = csv::Reader::from_reader(io::stdin());
     for line in reader.records(){
         let result = line?;
-        println!("{:?}", result)
+        println!("{:?}", result);
+        // println!(reader.headers())
+
     }
+    // println!(reader.headers().to_String);
+
+
     Ok(())
 }
 //
