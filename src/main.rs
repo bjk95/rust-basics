@@ -4,6 +4,10 @@ mod string_types;
 mod arrays;
 mod vectors;
 mod conditionals;
+mod loops;
+mod functions;
+mod pointers;
+
 
 struct Person{
     name: String,
@@ -26,7 +30,10 @@ fn main() {
     // string_types::run()
     // arrays::run()
     // vectors::run()
-    conditionals::run()
+    // conditionals::run()
+    // loops::run()
+    // functions::run();
+    pointers::run();
 }
 
 fn create_person(n: String, a: i32, d: String) -> Person {
