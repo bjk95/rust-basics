@@ -1,19 +1,16 @@
-mod csvs;
-mod string_formatting;
-mod string_types;
-mod arrays;
-mod vectors;
-mod conditionals;
-mod loops;
-mod functions;
-mod pointers;
+// mod csvs;
+// mod string_formatting;
+// mod string_types;
+// mod arrays;
+// mod vectors;
+// mod conditionals;
+// mod loops;
+// mod functions;
+// mod pointers;
+// mod structs;
+// mod enums;
+mod cli;
 
-
-struct Person{
-    name: String,
-    age: i32,
-    description: String
-}
 
 fn main() {
     // println!("Hello, world!");
@@ -33,14 +30,9 @@ fn main() {
     // conditionals::run()
     // loops::run()
     // functions::run();
-    pointers::run();
-}
-
-fn create_person(n: String, a: i32, d: String) -> Person {
-    Person {
-        name: n,
-        age: a,
-        description: d
-    }
+    // pointers::run();
+    // structs::run()
+    // enums::run()
+    cli::run()
 }
 
