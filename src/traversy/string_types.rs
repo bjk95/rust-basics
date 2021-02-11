@@ -1,6 +1,6 @@
 pub fn run() {
-    let mut hello = String::from("hello ");
-    let primative_bye = "Goodbye";
+    let mut hello:  String = String::from("hello ");
+    let primative_bye: &str = "Goodbye";
 
     hello.push_str("u a BEECH ");
     hello.push('\u{1F604}');
@@ -17,5 +17,4 @@ pub fn run() {
     println!("{}", primative_bye);
 
 
-    
 }

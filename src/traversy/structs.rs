@@ -8,6 +8,7 @@ struct Colour {
 // Tuple Struct
 struct TColour (u8,u8,u8);
 
+#[derive(Debug)]
 struct Customer {
     first_name: String,
     last_name: String,
@@ -56,10 +57,9 @@ pub fn run(){
 
     johnny.whack_him();
 
-    println!("{:?}", (johnny.first_name, johnny.last_name, johnny.is_active, johnny.age));
-
-
+    println!("{:#?}", (&johnny.first_name, &johnny.last_name, &johnny.is_active, &johnny.age));
     
+    println!("{:#?}", johnny)
 
 
 }
